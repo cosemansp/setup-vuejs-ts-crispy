@@ -1,21 +1,29 @@
-# myapp
+# Setup VueJS
 
-> A Vue.js project
+> A Vue.js project in Typescript
+
+# Disclaimer
+> THIS IS WORK IN PROGRESS
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-npm install
+yarn
 
 # serve with hot reload at localhost:8080
-npm run dev
+yarn serve
 
 # build for production with minification
-npm run build
+yarn build
 
 # build for production and view the bundle analyzer report
-npm run build --report
+yarn build --report
 ```
+## ToDo
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+- Add ```vue-class-component```
+- Add Jest unit testing
+- Add Vuex
+
+
