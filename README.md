@@ -5,6 +5,14 @@
 # Disclaimer
 > THIS IS WORK IN PROGRESS
 
+## History
+
+- Started with default vue/cli webpack template
+- Added tsconfig.json & ts-loader
+- Renamed *.js to *.ts
+- Added ```lang="ts"``` to script tags in *.vue files
+- Added ```vue-class-component```
+
 ## Build Setup
 
 ``` bash
@@ -22,7 +30,6 @@ yarn build --report
 ```
 ## ToDo
 
-- Add ```vue-class-component```
 - Add Jest unit testing
 - Add Vuex
 
