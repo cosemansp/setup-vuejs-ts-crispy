@@ -55,6 +55,14 @@ module.exports = {
       //   include: [resolve('src'), resolve('test')]
       // },
       {
+          test: /\.html$/,
+          loader: 'vue-template-loader',
+          exclude: resolve('index.html'),
+          options: {
+              scoped: true
+          }
+      },
+      {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         options: {

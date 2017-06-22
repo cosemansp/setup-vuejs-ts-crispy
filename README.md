@@ -12,6 +12,14 @@
 - Renamed *.js to *.ts
 - Added ```lang="ts"``` to script tags in *.vue files
 - Added ```vue-class-component```
+- Added ```vue-template-loader``` to import *.html files
+
+## Dependecies
+
+- All dependecies of vuejs/webpack except babel* & eslint
+- ```tslint```
+- ```vue-class-component```
+-
 
 ## Build Setup
 
@@ -32,5 +40,17 @@ yarn build --report
 
 - Add Jest unit testing
 - Add Vuex
+
+## Issues
+
+- Linting is not done in *.vue files
+
+## Resoources
+
+Typescript in VueJS
+https://github.com/ulaval/modul-typescript-template
+https://github.com/locoslab/vue-typescript-component-example
+
+
 
 
