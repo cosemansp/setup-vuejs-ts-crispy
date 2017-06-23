@@ -4,6 +4,9 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 
+// Load global styles
+import './styles.scss';
+
 Vue.config.productionTip = true;
 
 // tslint:disable-next-line

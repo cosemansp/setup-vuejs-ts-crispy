@@ -5,15 +5,6 @@
 # Disclaimer
 > THIS IS WORK IN PROGRESS
 
-## History
-
-- Started with default vue/cli webpack template
-- Added tsconfig.json & ts-loader
-- Renamed *.js to *.ts
-- Added ```lang="ts"``` to script tags in *.vue files
-- Added ```vue-class-component```
-- Added ```vue-template-loader``` to import *.html files
-
 ## Dependecies
 
 - All dependecies of vuejs/webpack except babel* & eslint
@@ -38,18 +29,30 @@ yarn build --report
 ```
 ## ToDo
 
-- Add Jest unit testing
-- Add Vuex
+- [x] Refactor vue/cli-webpack to TS
+- [x] Add vue-class-component
+- [x] Add tslint
+- [x] Add global sass file
+- [x] Add bootstrap
+- [x] Add font-awesome
+- [ ] Add logger
+- [ ] Add config
+- [ ] Add localstorage
+- [ ] Add Jest unit testing
+- [ ] Add Vuex
+- [ ] Add pretify
 
 ## Issues
 
-- Linting is not done in *.vue files
+- TSLint (and Vetur) has no support for *.vue files. Fallback to ts & html files.
 
 ## Resoources
 
 Typescript in VueJS
 https://github.com/ulaval/modul-typescript-template
 https://github.com/locoslab/vue-typescript-component-example
+https://github.com/Toilal/vue-webpack-template
+
 
 
 
