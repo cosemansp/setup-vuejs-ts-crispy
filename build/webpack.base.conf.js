@@ -27,15 +27,6 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //   test: /\.(js|vue)$/,
-      //   loader: 'eslint-loader',
-      //   enforce: 'pre',
-      //   include: [resolve('src'), resolve('test')],
-      //   options: {
-      //     formatter: require('eslint-friendly-formatter')
-      //   }
-      // },
       {
         test: /\.ts$/,
         exclude: /node_modules|vue\/src/,
@@ -49,18 +40,18 @@ module.exports = {
         loader: 'vue-loader',
         options: vueLoaderConfig
       },
+      // Alternative to precompile vue templates
       // {
-      //   test: /\.js$/,
-      //   loader: 'babel-loader',
-      //   include: [resolve('src'), resolve('test')]
+      //     test: /\.html$/,
+      //     loader: 'vue-template-loader',
+      //     exclude: resolve('index.html'),
+      //     options: {
+      //         scoped: true
+      //     }
       // },
       {
           test: /\.html$/,
-          loader: 'vue-template-loader',
-          exclude: resolve('index.html'),
-          options: {
-              scoped: true
-          }
+          loader: 'html-loader',
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
