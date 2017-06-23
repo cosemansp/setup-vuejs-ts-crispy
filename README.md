@@ -37,7 +37,7 @@ yarn build --report
 - [x] Add bootstrap
 - [x] Add font-awesome
 - [x] Add polyfills (copy from angular)
-- [ ] Add logger
+- [x] Add logger
 - [ ] Add config
 - [ ] Add localstorage
 - [ ] Add Jest unit testing

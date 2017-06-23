@@ -11,6 +11,16 @@ import Component from 'vue-class-component'
 
 @Component
 export default class App extends Vue {
+  constructor() {
+    super();
+
+    // // setup logging
+    // Logger.useDefaults();
+    // // Logger.setLevel(environment.logLevel);
+    // const log = Logger.get('app');
+    // log.info('Started')
+    // // log.info('Config', JSON.stringify(environment, null, '\t'))
+  }
 }
 </script>
 
