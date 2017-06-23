@@ -8,9 +8,10 @@
 ## Dependecies
 
 - All dependecies of vuejs/webpack except babel* & eslint
-- ```tslint```
-- ```vue-class-component```
--
+- ```yarn add tslint```
+- ```yarn add vue-class-component html-loader```
+- ```yarn add bootstrap-sass sass-loader sass-node```
+- ```yarn add font-awesome```
 
 ## Build Setup
 
@@ -31,10 +32,11 @@ yarn build --report
 
 - [x] Refactor vue/cli-webpack to TS
 - [x] Add vue-class-component
-- [x] Add tslint
+- [x] Add tslint (split *.vue into ts & html file)
 - [x] Add global sass file
 - [x] Add bootstrap
 - [x] Add font-awesome
+- [x] Add polyfills (copy from angular)
 - [ ] Add logger
 - [ ] Add config
 - [ ] Add localstorage
