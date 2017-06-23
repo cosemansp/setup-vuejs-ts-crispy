@@ -17,10 +17,8 @@ Vue.config.productionTip = true;
 
 // setup logger
 Logger.useDefaults();
-Logger.setLevel(Logger.DEBUG);
+Logger.setLevel(process.env.LOG_LEVEL);
 const log = Logger.get('app');
-log.info('Started');
-// log.info('Config', JSON.stringify(environment, null, '\t'))
 
 // tslint:disable-next-line
 new Vue({
@@ -28,4 +26,8 @@ new Vue({
   router,
   template: '<App/>',
   components: { App },
+  created() {
+    log.info('Started');
+    log.info('Config', JSON.stringify(process.env, null, '\t'));
+  },
 });

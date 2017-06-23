@@ -38,7 +38,7 @@ yarn build --report
 - [x] Add font-awesome
 - [x] Add polyfills (copy from angular)
 - [x] Add logger
-- [ ] Add config
+- [x] Add config
 - [ ] Add localstorage
 - [ ] Add Jest unit testing
 - [ ] Add Vuex
@@ -55,6 +55,8 @@ https://github.com/ulaval/modul-typescript-template
 https://github.com/locoslab/vue-typescript-component-example
 https://github.com/Toilal/vue-webpack-template
 
+Other VueJS setups
+https://github.com/vuejs/vue-curated-client
 
 
 
