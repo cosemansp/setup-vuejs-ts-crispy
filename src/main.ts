@@ -1,8 +1,6 @@
-
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import * as Logger from 'js-logger';
+import { local } from './core/storage';
 
 import App from './App.vue';
 import router from './router';
@@ -29,5 +27,8 @@ new Vue({
   created() {
     log.info('Started');
     log.info('Config', JSON.stringify(process.env, null, '\t'));
+
+    // setup localStorage prefix
+    local.prefix = 'myApp';
   },
 });

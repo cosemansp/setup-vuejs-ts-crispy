@@ -19,7 +19,7 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json', '.ts'],
+    extensions: ['.js', '.json', '.ts'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src')
@@ -32,7 +32,8 @@ module.exports = {
         exclude: /node_modules|vue\/src/,
         loader: 'ts-loader',
         options: {
-          appendTsSuffixTo: [/\.vue$/]
+          appendTsSuffixTo: [/\.vue$/],
+          configFileName: resolve('src/tsconfig.app.json')
         }
       },
       {
@@ -40,19 +41,11 @@ module.exports = {
         loader: 'vue-loader',
         options: vueLoaderConfig
       },
-      // Alternative to precompile vue templates
+      // Alternative to inline html in vue components
       // {
       //     test: /\.html$/,
-      //     loader: 'vue-template-loader',
-      //     exclude: resolve('index.html'),
-      //     options: {
-      //         scoped: true
-      //     }
+      //     loader: 'vue-html-loader',
       // },
-      {
-          test: /\.html$/,
-          loader: 'html-loader',
-      },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',

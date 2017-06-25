@@ -5,19 +5,12 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import Component from 'vue-class-component'
-// more info: https://github.com/vuejs/vue-class-component
-
-@Component
-export default class Hello extends Vue {
-  msg = 'Welcome to Your Vue.js App'
-
-  constructor() {
-    super()
-    console.log('');
-  }
-}
+  // While it would be possible to support inline TypeScript
+  // code in the vue file itself, we prefer separate files
+  // to make use of existing IDE/editor and tooling support
+  // for TypeScript files.
+  // https://github.com/locoslab/vue-typescript-component
+  export { default } from './hello';
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

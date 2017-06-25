@@ -13,6 +13,10 @@
 - ```yarn add bootstrap-sass sass-loader sass-node```
 - ```yarn add font-awesome```
 
+## TSLint
+
+- We follow the ```tslint-config-shopify``` tslint config
+
 ## Build Setup
 
 ``` bash
@@ -39,8 +43,8 @@ yarn build --report
 - [x] Add polyfills (copy from angular)
 - [x] Add logger
 - [x] Add config
-- [ ] Add localstorage
-- [ ] Add Jest unit testing
+- [x] Add localstorage helper
+- [x] Add Jest unit testing
 - [ ] Add Vuex
 - [ ] Add pretify
 

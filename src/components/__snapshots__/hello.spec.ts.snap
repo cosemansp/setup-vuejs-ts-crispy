@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hello Component should renders config 1`] = `
+<div>
+  <div class="hello">
+    <h1>Welcome to Your Vue.js App</h1>
+  </div>
+</div>
+`;
+
+exports[`Hello Component should renders correctly 1`] = `
+<div class="hello">
+  <h1>Hello World</h1>
+</div>
+`;
+
+exports[`Hello Component should renders correctly with childs 1`] = `
+<div class="hello">
+  <h1>Welcome to Your Vue.js App</h1>
+</div>
+`;

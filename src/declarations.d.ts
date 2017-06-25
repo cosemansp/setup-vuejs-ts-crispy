@@ -14,23 +14,23 @@ declare module "*.vue" {
  *   ...
  * }
 */
-// declare module '*.html' {
-//   import Vue = require('vue')
-//   interface WithRender {
-//     <V extends Vue>(options: Vue.ComponentOptions<V>): Vue.ComponentOptions<V>
-//     <V extends typeof Vue>(component: V): V
-//   }
-//   const withRender: WithRender
-//   export = withRender
-// }
+declare module '*.html' {
+  import Vue = require('vue')
+  interface WithRender {
+    <V extends Vue>(options: Vue.ComponentOptions<V>): Vue.ComponentOptions<V>
+    <V extends typeof Vue>(component: V): V
+  }
+  const withRender: WithRender
+  export = withRender
+}
 
 /*
  * To allow import html files as string
  */
-declare module "*.html" {
-    const content: string;
-    export default content;
-}
+// declare module "*.html" {
+//     const content: string;
+//     export default content;
+// }
 
 /*
  * Config type as injected by webpack
