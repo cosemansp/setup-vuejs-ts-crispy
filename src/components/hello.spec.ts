@@ -4,8 +4,7 @@ import { mount, mountConfig } from '../../test/helper';
 // available via *.vue files
 // const Hello = require('./Hello.vue');
 
-import Hello from './hello';
-import HelloWithTemplate from './hello.vue';
+import Hello from './hello.vue';
 
 describe('Hello Component', () => {
   it('should have a default "msg" set to "Welcome"', () => {
@@ -15,14 +14,14 @@ describe('Hello Component', () => {
 
   it('should renders correctly', () => {
     // render component as a single unit
-    const fixture = mount(HelloWithTemplate);
+    const fixture = mount(Hello);
     fixture.setData({ msg: 'Hello World' });
     expect(fixture).toMatchSnapshot();
   });
 
   it('should renders correctly with childs', () => {
     // render component with children
-    const fixture = mount(HelloWithTemplate);
+    const fixture = mount(Hello);
     expect(fixture).toMatchSnapshot();
   });
 
@@ -34,7 +33,7 @@ describe('Hello Component', () => {
         </div>
       `,
       components: {
-        hello: HelloWithTemplate,
+        hello: Hello,
       },
     };
     const fixture = mountConfig(componentConfig);

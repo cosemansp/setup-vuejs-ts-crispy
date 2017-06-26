@@ -8,6 +8,7 @@
     "serve": "node build/dev-server.js",
     "build": "node build/build.js",
     "lint": "tslint --project tsconfig.json --type-check --format stylish",
+    "vuetype": "vuetype src/components",
     "test": "jest --watch",
     "format": "prettier --semi --single-quote --trailing-comma all --parser typescript --write './src/**/*.{ts,scss}'"
   },
@@ -56,6 +57,7 @@
     "url-loader": "^0.5.8",
     "vue-loader": "^12.2.1",
     "vue-style-loader": "^3.0.1",
+    "vue-typescript-import-dts": "^3.1.0",
     "webpack": "^2.6.1",
     "webpack-bundle-analyzer": "^2.2.1",
     "webpack-dev-middleware": "^1.10.0",

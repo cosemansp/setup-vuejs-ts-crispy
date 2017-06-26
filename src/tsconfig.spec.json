@@ -9,8 +9,7 @@
       "node"
     ]
   },
-  "files": [
-  ],
+  "files": [],
   "include": [
     "**/*.spec.ts",
     "**/*.d.ts"
