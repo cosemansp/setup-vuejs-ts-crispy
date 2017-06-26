@@ -46,7 +46,7 @@ yarn build --report
 - [x] Add localstorage helper
 - [x] Add Jest unit testing
 - [ ] Add Vuex
-- [ ] Add pretify
+- [x] Add prettier support
 
 ## Issues
 

@@ -1,8 +1,22 @@
 {
-    "extends": "tslint-config-shopify",
-    "rules": {
-        "no-console": [true, "log", "error"],
-        "no-require-imports": false,
-        "no-var-requires":false
-    }
+  "extends": "tslint-config-shopify",
+  "rules": {
+    "no-console": [
+      true,
+      "log",
+      "error"
+    ],
+    "no-require-imports": false,
+    "no-var-requires": false,
+    /*
+       disable rules covered by prettier
+    */
+    "semicolon": [
+      false
+    ],
+    "quotemark": [
+      false
+    ],
+    "eofline": false
+  }
 }

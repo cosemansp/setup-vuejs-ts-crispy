@@ -1,5 +1,5 @@
 export interface Options {
-  noPrefix: boolean,
+  noPrefix: boolean;
 }
 
 export class Storage {
@@ -38,7 +38,7 @@ export class Storage {
       return allKeys;
     }
 
-    allKeys.forEach((key) => {
+    allKeys.forEach(key => {
       if (key.indexOf(this.prefix) !== -1) {
         keys.push(key.replace(this.prefix, ''));
       }
@@ -49,7 +49,7 @@ export class Storage {
 
   flush() {
     if (this.prefix.length) {
-      this.keys().forEach((key) => {
+      this.keys().forEach(key => {
         this.storage.removeItem(this.getPrefixedKey(key));
       });
       return;

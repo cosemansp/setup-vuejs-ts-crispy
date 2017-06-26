@@ -1,8 +1,8 @@
 import { Storage } from './storage';
 
 interface ITest {
-  id: number,
-  name: string,
+  id: number;
+  name: string;
 }
 
 describe('Storage', () => {
@@ -27,7 +27,7 @@ describe('Storage', () => {
   });
 
   test('set/get typesafe object', () => {
-    const obj: ITest = { id: 12, name: 'test'};
+    const obj: ITest = { id: 12, name: 'test' };
     sut.set('myKey', obj);
     const result = sut.get<ITest>('myKey');
     expect(result.id).toBe(12);

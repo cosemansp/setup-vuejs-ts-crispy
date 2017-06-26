@@ -8,7 +8,6 @@ import Hello from './hello';
 import HelloWithTemplate from './hello.vue';
 
 describe('Hello Component', () => {
-
   it('should have a default "msg" set to "Welcome"', () => {
     const component = new Hello();
     expect(component.msg).toMatch('Welcome');
@@ -44,4 +43,3 @@ describe('Hello Component', () => {
     expect(fixture.vm.$refs.component.msg).toMatch('Welcome');
   });
 });
-
