@@ -37,7 +37,7 @@ describe('Storage', () => {
     sut.set('myKey', 12345);
     sut.set('abc', '11111');
     const result = sut.keys();
-    expect(result).toEqual(['myKey', 'abc']);
+    expect(result).toEqual([ 'myKey', 'abc' ]);
   });
 
   test('rm', () => {
@@ -50,7 +50,7 @@ describe('Storage', () => {
   test('prefix', () => {
     sut.prefix = 'myApp';
     sut.set('myKey', 12345);
-    expect(Object.keys(localStorage)).toEqual(['myApp.myKey']);
+    expect(Object.keys(localStorage)).toEqual([ 'myApp.myKey' ]);
   });
 
   test('flush', () => {

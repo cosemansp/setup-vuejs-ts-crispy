@@ -1,5 +1,8 @@
 {
-  "extends": "tslint-config-shopify",
+  "extends": [
+    "tslint-config-shopify",
+    "tslint-config-prettier"
+  ],
   "rules": {
     "no-console": [
       true,
@@ -8,15 +11,6 @@
     ],
     "no-require-imports": false,
     "no-var-requires": false,
-    /*
-       disable rules covered by prettier
-    */
-    "semicolon": [
-      false
-    ],
-    "quotemark": [
-      false
-    ],
-    "eofline": false
+    "trailing-comma-interface": false
   }
 }

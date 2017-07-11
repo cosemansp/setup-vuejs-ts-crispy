@@ -45,12 +45,14 @@ yarn build --report
 - [x] Add config
 - [x] Add localstorage helper
 - [x] Add Jest unit testing
-- [ ] Add Vuex
 - [x] Add prettier support
+- [x] Add vue-i18n
+- [ ] Add Vuex
 
 ## Issues
 
 - TSLint (and Vetur) has no support for *.vue files. Fallback to ts & html files.
+- jest-vue-preprocessor with TypeScript in unreliable, see https://github.com/vire/jest-vue-preprocessor/issues/17. This makes component testing with jest not possible with *vue files
 
 ## Resoources
 
@@ -61,6 +63,8 @@ https://github.com/Toilal/vue-webpack-template
 
 Other VueJS setups
 https://github.com/vuejs/vue-curated-client
+https://alexjoverm.github.io/2017/06/28/Integrate-TypeScript-in-your-Vue-project
+
 
 
 
