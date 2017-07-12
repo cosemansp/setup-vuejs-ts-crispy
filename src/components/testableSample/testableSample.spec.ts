@@ -1,4 +1,6 @@
-import { mount, mountConfig } from '../../../test/helper';
+import Vue from 'vue';
+import { mount } from 'avoriaz';
+import VueWrapper from 'avoriaz/dist/VueWrapper';
 
 import TestableSample from './testableSample';
 
@@ -14,6 +16,12 @@ describe('Hello Component', () => {
     fixture.setData({ title: 'I am testable' });
     expect(fixture).toMatchSnapshot();
   });
+
+  const mountConfig = (config: any) => {
+    const vm = new Vue(config);
+    vm.$mount();
+    return new VueWrapper(vm);
+  };
 
   it('should renders config', () => {
     const componentConfig = {
